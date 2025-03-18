@@ -94,7 +94,7 @@ async function processMediaPlaylist(playlist: string, baseUrl: string, outputFil
     fmt(x) {
       const fileName = outputFile.split('/').pop() || outputFile;
       const percent = Math.floor((x.value / x.max) * 100);
-      return `${x.styledTime()} 📥 ${fileName} ${x.progressBar} ${percent}% [${x.value}/${x.max}] segments`;
+      return `${x.styledTime()} ${x.progressBar} ${percent}% [${x.value}/${x.max}] segments`;
     },
     // barLength: 40,
     // fillChar: '█',
